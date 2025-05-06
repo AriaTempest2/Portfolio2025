@@ -6,9 +6,14 @@ Light Grey - #d3d2d6
 Off-White - #f6f6f6
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 /* MAIN STYLES -------------------------------- */
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 *, *:before, *:after{
@@ -22,12 +27,34 @@ html, body{
 body {
     background: #f6f6f6;
     margin: 0;
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+h1, h2, h3 {
+    font-family: 'Caveat';
+    margin: 0;
+    
+}
+
+h1 {
+    font-size: 7rem;
+    line-height: 0.85;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2.4rem;
 }
 
 /* links
 -------------------------------- */
 a {
-    color: #3c8453;
+    color: #d3d4d2;
 }
 
 a:hover {
@@ -43,12 +70,20 @@ footer a:hover {
 }
 
 .btn {
-    color: #f6f6f6;
+    background-color: #222222;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    letter-spacing: 0.1m;
+    line-height: 1;
+    border-radius: 4px;
 }
 
 .download-link {
     background-color: #3c8453;
+    font-size: 1.5em;
 }
 
 .content-wrapper {
@@ -107,18 +142,35 @@ footer a:hover {
 /* Projects 
 -------------------------------- */
 .project-item {
-    display: flow-root;
-    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    /* margin: 30px 0; */
 }
 
 .project-item img {
-    width: 300px;
-    float: left;
-    margin-right: 20px;
+    width: 280px;
+    /* float: left;
+    margin-right: 20px; */
 }
+
+
+
 
 /* Work Experience 
 -------------------------------- */
+.work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+}
+
+.work-details {
+    margin: 0;
+}
+
+
 
 /* Education 
 -------------------------------- */
